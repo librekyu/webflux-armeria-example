@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package com.bluedawn.sample.proto;
+option java_package = "com.bluedawn.sample.proto";
+
+service Demo {
+
+    rpc Hello (DemoGrpcRequest) returns (DemoGrpcResponse);
+
+}
+
+message DemoGrpcRequest {
+
+    string message = 1;
+
+}
+
+message DemoGrpcResponse {
+
+    string message = 1;
+
+}
