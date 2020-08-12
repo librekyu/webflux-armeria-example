@@ -23,7 +23,9 @@ public class ArmeriaClientConfiguration {
 	@Bean
 	public ClientFactory clientFactory() {
 
-		return ClientFactory.builder().tlsNoVerify().build();
+		return ClientFactory.builder()
+				.tlsNoVerify()
+				.build();
 
 	}
 
